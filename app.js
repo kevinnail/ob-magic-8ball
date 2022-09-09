@@ -36,8 +36,10 @@ const answers = [
     'Very doubtful',
 ];
 
-btn1.addEventListener('click', tellFortune);
+// btn1.addEventListener('click', tellFortune);
 
 function tellFortune() {
     console.log('clicked');
 }
+
+console.log(btn1.textContent);
