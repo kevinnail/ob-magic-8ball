@@ -25,3 +25,24 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+# My Plan
+
+![](assets/wrireframe.png)
+
+### html items I need:
+
+-   text input
+-   button for input
+-   img of 8 ball
+-   h1 for answer
+-   button for "Try again"
+
+### Javascript:
+
+-   grab text input
+-   click event on input button
+-   click event on try again button
+-   add/ remove a "hide" class to 8ball and input
+-   add/ remove a "hide" class to answer/ button
+-   generate random answers
