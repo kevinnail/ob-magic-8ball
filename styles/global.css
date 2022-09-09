@@ -66,3 +66,7 @@ ul li {
     grid-template-columns: 1fr;
     justify-content: center;
 }
+
+div {
+    margin: auto;
+}
