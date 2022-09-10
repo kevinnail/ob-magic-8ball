@@ -39,11 +39,23 @@ const answers = [
 btn1.addEventListener('click', tellFortune);
 
 function tellFortune() {
-    console.log('clicked');
+    // console.log('clicked');
     questionContainer.classList.toggle('hide');
     answerContainer.classList.toggle('hide');
-    console.log(answerContainer.classList.value);
+    // console.log(answerContainer.classList.value);
     // answerContainer.classList.toggle('hide');
     // console.log(answerContainer.classList.value);
     // console.log(textInput.textContent);
+    const randNum = Math.floor(Math.random() * answers.length);
+    const randomAnswer = answers[randNum];
+    answer.textContent = randomAnswer;
+}
+
+btn2.addEventListener('click', tryAgain);
+
+function tryAgain() {
+    console.log('clicked');
+    questionContainer.classList.toggle('hide');
+    answerContainer.classList.toggle('hide');
+    console.log(questionContainer.classList.value);
 }
