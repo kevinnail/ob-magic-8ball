@@ -36,10 +36,14 @@ const answers = [
     'Very doubtful',
 ];
 
-// btn1.addEventListener('click', tellFortune);
+btn1.addEventListener('click', tellFortune);
 
 function tellFortune() {
     console.log('clicked');
+    questionContainer.classList.toggle('hide');
+    answerContainer.classList.toggle('hide');
+    console.log(answerContainer.classList.value);
+    // answerContainer.classList.toggle('hide');
+    // console.log(answerContainer.classList.value);
+    // console.log(textInput.textContent);
 }
-
-console.log(btn1.textContent);
