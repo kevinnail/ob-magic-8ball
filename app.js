@@ -7,7 +7,6 @@
 // use user input to update state
 // update DOM to reflect the new state
 
-// const textInput = document.getElementById('question-input');
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
 const questionContainer = document.getElementById('question-container');
@@ -41,27 +40,14 @@ btn1.addEventListener('click', tellFortune);
 function tellFortune() {
     questionContainer.classList.toggle('hide');
     answerContainer.classList.toggle('hide');
-    // console.log(answerContainer.classList.value);
-    // answerContainer.classList.toggle('hide');
-    // console.log(answerContainer.classList.value);
-    // console.log(textInput.textContent);
     const randNum = Math.floor(Math.random() * answers.length);
     const randomAnswer = answers[randNum];
     answer.textContent = randomAnswer;
-    // console.log(
-    //     "tellFortune shows questionContainer's class as " + questionContainer.classList.value
-    // );
 }
 
 btn2.addEventListener('click', tryAgain);
 
 function tryAgain() {
-    // console.log('clicked');
     questionContainer.classList.toggle('hide');
-    const wtf = questionContainer.classList;
-    console.log(wtf);
     answerContainer.classList.toggle('hide');
-    console.log(
-        "tryAgain function shows questionContainer's class as  " + questionContainer.classList
-    );
 }
