@@ -63,9 +63,3 @@ div {
 .hide {
     display: none;
 }
-
-#question-container li {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-}
