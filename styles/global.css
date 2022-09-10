@@ -50,12 +50,6 @@ img {
     margin: 20px auto 20px auto;
 }
 
-#question-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-}
-
 ul li {
     display: grid;
     grid-template-columns: 1fr;
@@ -68,4 +62,10 @@ div {
 
 .hide {
     display: none;
+}
+
+#question-container li {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
